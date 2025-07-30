@@ -1,2 +1,5 @@
 def handler(event):
-    return {"message": "Hello from RunPod!"}
+    return {
+        "message": "Hello, world!",
+        "input": event.get("input", {})
+    }
